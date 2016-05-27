@@ -80,7 +80,7 @@ class AdminSecurityController extends Controller
             $resetRoute = $this->generateUrl('fos_user_resetting_request');
         }
 
-        return $this->render('SonataUserBundle:Admin:Security/login.html.'.$this->container->getParameter('fos_user.template.engine'), array(
+        return $this->render('SonataUserBundle:Admin:Security/login.html.twig', array(
                 'last_username' => $lastUsername,
                 'error' => $error,
                 'csrf_token' => $csrfToken,
