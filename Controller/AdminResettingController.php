@@ -40,7 +40,7 @@ class AdminResettingController extends ResettingController
     /**
      * {@inheritdoc}
      */
-    public function sendEmailAction()
+    public function sendEmailAction(Request $request)
     {
         $username = $this->container->get('request')->request->get('username');
 
